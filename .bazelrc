@@ -1,0 +1,7 @@
+# shellcheck disable=all
+common --enable_bzlmod
+
+common --incompatible_strict_action_env
+
+# Use a user.bazelrc if it exists
+try-import %workspace%/user.bazelrc
